@@ -1,20 +1,18 @@
 #include<stdio.h>
-#include <math.h>
-#include"include/f.h"
+#include"include/insert_sort.h"
 
-int main(void)
+int main()
 {
-	int n,dr,dc,i,j,t;
-	int Board[1050][1050],tile=0;
-	scanf("%d",&t);
-	n=(int)pow(2,t);
-	scanf("%d %d",&dr,&dc);
-	f(0,0,dr-1,dc-1,n);
-	for(i=0;i<n;i++)
-	{
-		for(j=0;j<n-1;j++)
-			printf("%d ",Board[i][j]);
-		printf("%d\n",Board[i][j]);
-	}
-	return 0;
+    int N;
+    scanf("%d",&N);
+    int a[N+1];
+    int i;
+    for(i=1;i<=N;i++)
+    {scanf("%d",&a[i]);}
+    insert_sort(a,N);
+    printf("%d",a[1]);
+    for(i=2;i<=N;i++)
+    {printf(" %d",a[i]);}
+    printf("\n");
+    return 0;
 }
