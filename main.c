@@ -2,11 +2,10 @@
 #include <math.h>
 #include"include/f.h"
 
-int Board[1050][1050],tile=0;
-
 int main(void)
 {
 	int n,dr,dc,i,j,t;
+	int Board[1050][1050],tile=0;
 	scanf("%d",&t);
 	n=(int)pow(2,t);
 	scanf("%d %d",&dr,&dc);
