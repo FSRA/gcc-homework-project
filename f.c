@@ -1,4 +1,6 @@
 #include"include/f.h"
+int Board[1050][1050],tile=0;
+
 int f(int tr,int tc,int dr,int dc,int size)
 {
 	int t,s;
