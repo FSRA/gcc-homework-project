@@ -1,4 +1,4 @@
-main:main.o f.o
+main:main.o insert_sort.o
 	gcc main.o insert_sort.o -o main
 main.o:main.c
 	gcc -c main.c
