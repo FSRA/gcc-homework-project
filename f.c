@@ -1,8 +1,9 @@
 #include"include/f.h"
-int Board[1050][1050],tile=0;
+
 
 int f(int tr,int tc,int dr,int dc,int size)
 {
+	int Board[1050][1050],tile=0;
 	int t,s;
 	if(size==1)
 		return 1;
